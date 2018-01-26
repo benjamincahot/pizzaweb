@@ -37,18 +37,36 @@
         .main-header {
           background-color: rgba(0, 0, 0, 0.6);
         }
-        .navbar-light .navbar-nav .nav-link {
+        .navbar-light .navbar-nav .nav-link .jumbotron-fluid {
           color: rgba(255,255,255,.5);
         }
-        .navbar-light .navbar-nav .nav-link:hover {
+        .navbar-light .navbar-nav .nav-link:hover  {
           color: rgba(255,255,255,1);
         }
         .featured {
-          background-image: url('https://photos-4.dropbox.com/t/2/AADy6li6CVzVlUCT0PpsH-PA5e5R5igKSeD8PHW83GE2oA/12/67241699/jpeg/32x32/3/1516888800/0/2/pizza-show-1.jpg/ENKcpDQY9LQBIAcoBw/YqC21Tvh3EfvyjPfG34U_BgJlWSAM3NiTK2DlYzwoXI?dl=0&size=1280x960&size_mode=3');
+          background-image: url('../webpizza/assets/images/pizzafeatures.png');
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
           height: 700px;
+        }
+        .jumbotron {
+          top: 35%;
+          position: relative;
+          border-radius: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          color: white;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        .jumbotron .lead {
+          font-size: 3rem;
+          font-weight: 400;
+          letter-spacing: 1px;
+          line-height: 3.5rem;
+        }
+        .jumbotron .btn {
+          font-size: 90%;
         }
         .section-header .lead {
           color: grey;
@@ -130,7 +148,7 @@
            <!-- Menu principal -->
            <nav class="navbar navbar-expand-md navbar-light">
                <a class="navbar-brand" href="#">
-                   <img src="https://photos-6.dropbox.com/t/2/AADsNsWn0aBqbrmUdPpCHB9ixPcr0L92YgoW73OB5H34hQ/12/67241699/png/32x32/3/1516888800/0/2/logo.png/ENKcpDQY9LQBIAcoBw/JKMX5QWZeemZzU6oKkbD9tVkYZipPomJN8dywFnmVgI?dl=0&preserve_transparency=1&size=1280x960&size_mode=3" alt="">
+                   <img src="../webpizza/assets/images/logo.png" alt="">
                    <hello pizza>
                </a>
 
@@ -160,153 +178,160 @@
     <div class="main-content">
       <!-- featured -->
         <section class="featured">
+          <div class="jumbotron">
+            <div class="container">
+              <h1 class="d-none">Web Pizza</h1>
+              <p class="lead">Une bonne pizza </br> pour bien coder</p>
+              <a class="btn btn-animation" href="#" role="button">Manger cette pizza</a>
+            </div>
+          </div>
         </section>
         <!--end .feature-->
 
       <!-- nos pizzas -->
-        <section class="pizza">
-          <div class="container">
-            <div class="section-header">
-              <h3 class="section-title">nos pizzas</h3>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-              <div class="row">
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AAABfzQAK_qohBmW9BB80ozntDV0vSHliwpykfgskgq08Q/12/67241699/png/32x32/3/1516896000/0/2/pizza-1.png/ENKcpDQY_LUBIAcoBw/QfRdSJyRjDQvFNr6tOaa55EtQrsFN8Z2jJT6KUM6VbY?dl=0&preserve_transparency=1&size=1024x768&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Chèvre</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">8,99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AAAeCafbV0rajQRXTKFxkQio03beUm0qcY__6lQEsZrGEw/12/67241699/png/32x32/3/1516896000/0/2/pizza-2.png/ENKcpDQY_LUBIAcoBw/1XpDecQtpFtazD3yK2SamEN8J4OisxeJOQIi1YzVC-E?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Kebab</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">8,99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-6.dropbox.com/t/2/AACnRWd3o3vwkSlb5-ZB1YRqLysNMR1ssAm1XGLefDOQsQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-3.png/ENKcpDQY_LUBIAcoBw/aFsoOromR8sh8lj2gRBkcpBPrjxdz_ZJEttJYy58k1Y?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Raclette</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">11,99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-1.dropbox.com/t/2/AACr5DgZmB1osW9qSuDuknIhXCpg8Pp4ppneT4sHFbiNoA/12/67241699/png/32x32/3/1516896000/0/2/pizza-4.png/ENKcpDQYobYBIAcoBw/pqf3Pr-33KUJqcNTrMJxkLs7OWOrbzOhZxwsasv78B8?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Saumon</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">14.99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AAAv67UpoEvGOmgWbhN_kuO6FWarXCvqZCOBi2moYGecpg/12/67241699/png/32x32/3/1516896000/0/2/pizza-5.png/ENKcpDQY_LUBIAcoBw/8hN-hcpaokh0w1Y1FVki4NucM410ynSsoSdiLaIAXB4?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Savoyarde</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">14.99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AACPNZwWyx--2age19QRERahKkwSR7FewR_gXLddOBVTJg/12/67241699/png/32x32/3/1516896000/0/2/pizza-6.png/ENKcpDQY_LUBIAcoBw/LFh05e5mBHDMXVt_1JaGUZCCJ1XJIxsXOJnM9d5OXd0?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">4 fromages</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">8.99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-1.dropbox.com/t/2/AAAjNMqkk90FJrTci0R7OVLiJIkdghlTOV4RD64H3fFQBQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-7.png/ENKcpDQY_LUBIAcoBw/yiIppeyA5izf3vEFeQoMzBE5zPV6mFDFYuEL7fatDZM?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Bolognaise</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">9.99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABSTrDFB8kjuuI_jT5aWZpfkZVWilHgPrIVJ8k3FFVkiQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-8.png/ENKcpDQY_LUBIAcoBw/lGy-gpJbpSUQOfn4DqXZtQKYmAzkOzkJlqyTOiKB3zo?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
-                    <div class="card-body">
-                      <h5 class="card-title">Reine</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-block btn-animation">7.99 &#128;</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-        </section>
-        <!--end .pizza-->
-
-      <!-- nos salades -->
-        <section class="salads">
-          <div class="container">
-            <div class="section-header">
-              <h3 class="section-title">nos salades</h3>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      <section class="pizza">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">nos pizzas</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
             <div class="row">
               <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-1.png" alt="Pizza">
                   <div class="card-body">
-                    <h5 class="card-title">salade</h5>
+                    <h5 class="card-title">Chèvre</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">8,99 &#128;</a>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-2.png" alt="Pizza">
                   <div class="card-body">
-                    <h5 class="card-title">salade</h5>
+                    <h5 class="card-title">Kebab</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">8,99 &#128;</a>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-3.png" alt="Pizza">
                   <div class="card-body">
-                    <h5 class="card-title">salade</h5>
+                    <h5 class="card-title">Raclette</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">11,99 &#128;</a>
                   </div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-4.png" alt="Pizza">
                   <div class="card-body">
-                    <h5 class="card-title">salade</h5>
+                    <h5 class="card-title">Saumon</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">14.99 &#128;</a>
                   </div>
                 </div>
               </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-5.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">Savoyarde</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">14.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-6.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">4 fromages</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">8.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-7.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">Bolognaise</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">9.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="../webpizza/assets/images/pizza-8.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">Reine</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-sm btn-block btn-animation">7.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+      </section>
+      <!--end .pizza-->
+
+    <!-- nos salades -->
+      <section class="salads">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">nos salades</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-        </section>
+          <div class="row">
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../webpizza/assets/images/salade-1.png" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">salade</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-sm btn-block btn-animation">6.99 &#128;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../webpizza/assets/images/salade-2.png" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">salade</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-sm btn-block btn-animation">6.99 &#128;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../webpizza/assets/images/salade-3.png" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">salade</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-sm btn-block btn-animation">6.99 &#128;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../webpizza/assets/images/salade-4.png" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">salade</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-sm btn-block btn-animation">6.99 &#128;</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
         <!--end .salads-->
 
     </div> <!--end main.content-->
@@ -346,7 +371,7 @@
               <textarea class="form-control text-white" id="exampleFormControlTextarea1" placeholder="Votre message" rows="8"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-warning text-center">SEND MESSAGE</button>
+            <button type="submit" class="btn btn-animation text-center">SEND MESSAGE</button>
           </form>
         </div>
       </div>
@@ -361,6 +386,6 @@
       </br>
       </div>
     </footer> <!--end main.footer-->
-
+qdgh,nbvkyjnbffhjvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvn sgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzgzty
   </body>
 </html>
