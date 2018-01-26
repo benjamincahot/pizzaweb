@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <title>Web Pizza</title>
+    <style>
+        section {
+          margin-bottom: 80px;
+        }
+        section:last-child {
+          margin-bottom: 160px;
+        }
+        form {
+          padding-bottom: 70px;
+        }
+        *:focus {
+          box-shadow: none !important;
+        }
+        .section-title {
+          margin: 0 0 10px 0;
+          padding: 0 0 10px 0;
+          text-transform: uppercase;
+
+          display: inline-block;
+          border-bottom: 3px solid #ffe600;
+        }
+        .section-title::after {
+          content:"";
+          clear: both;
+          display: block;
+        }
+        .section-header {
+          text-align: center;
+        }
+        .main-header {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+        .navbar-light .navbar-nav .nav-link {
+          color: rgba(255,255,255,.5);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+          color: rgba(255,255,255,1);
+        }
+        .featured {
+          background-image: url('https://photos-4.dropbox.com/t/2/AADy6li6CVzVlUCT0PpsH-PA5e5R5igKSeD8PHW83GE2oA/12/67241699/jpeg/32x32/3/1516888800/0/2/pizza-show-1.jpg/ENKcpDQY9LQBIAcoBw/YqC21Tvh3EfvyjPfG34U_BgJlWSAM3NiTK2DlYzwoXI?dl=0&size=1280x960&size_mode=3');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 700px;
+        }
+        .section-header .lead {
+          color: grey;
+          font-size: 15px;
+        }
+        .lead {
+          font-size: 15px;
+        }
+        .contact .lead {
+          color: grey;
+        }
+        .form-group .form-control {
+          border-radius: 0;
+          background-color: #13191c;
+        }
+        .btn-warning {
+          border-radius: 0;
+          background-color: #ffe600
+        }
+        .googlemap, .contact {
+          background-color: #13191c;
+          color: #FFFFFF;
+        }
+        .googlemap-content {
+          top: -80px;
+          height: 380px !important;
+          width: 100% !important;
+          position: relative;
+          overflow: hidden;
+        }
+        .googlemap iframe {
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          height: 200%;
+          width: 200%;
+        }
+        .copyright {
+          background-color: #ffffff;
+        }
+        .card {
+          border: none;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        .card-title {
+          text-align: center;
+        }
+        .card-text {
+          text-align: justify;
+        }
+        .btn-animation {
+          background-color: #13191c;
+          border-radius: 0;
+
+          -webkit-transition: all .6s;
+          transition: all .6s;
+          transition-property: background-color;
+          background-color: yellow;
+          color: black;
+        }
+        .btn-animation:hover {
+          background-color: orange;
+          color: black;
+        }
+        .card .btn {
+          font-size: 18px;
+        }
+        .btn-warning {
+          font-size: 18px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!--Main Header-->
+    <header class="main-header fixed-top">
+       <div class="container">
+           <!-- Menu principal -->
+           <nav class="navbar navbar-expand-md navbar-light">
+               <a class="navbar-brand" href="#">
+                   <img src="https://photos-6.dropbox.com/t/2/AADsNsWn0aBqbrmUdPpCHB9ixPcr0L92YgoW73OB5H34hQ/12/67241699/png/32x32/3/1516888800/0/2/logo.png/ENKcpDQY9LQBIAcoBw/JKMX5QWZeemZzU6oKkbD9tVkYZipPomJN8dywFnmVgI?dl=0&preserve_transparency=1&size=1280x960&size_mode=3" alt="">
+                   <hello pizza>
+               </a>
+
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ml-auto">
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">NOS PIZZAS</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">NOS SALADES</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-white" href="#">CONTACT</a>
+                       </li>
+                   </ul>
+               </div>
+           </nav>
+           <!-- end .navbar -->
+       </div>
+   </header>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- featured -->
+        <section class="featured">
+        </section>
+        <!--end .feature-->
+
+      <!-- nos pizzas -->
+        <section class="pizza">
+          <div class="container">
+            <div class="section-header">
+              <h3 class="section-title">nos pizzas</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AAABfzQAK_qohBmW9BB80ozntDV0vSHliwpykfgskgq08Q/12/67241699/png/32x32/3/1516896000/0/2/pizza-1.png/ENKcpDQY_LUBIAcoBw/QfRdSJyRjDQvFNr6tOaa55EtQrsFN8Z2jJT6KUM6VbY?dl=0&preserve_transparency=1&size=1024x768&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Chèvre</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">8,99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AAAeCafbV0rajQRXTKFxkQio03beUm0qcY__6lQEsZrGEw/12/67241699/png/32x32/3/1516896000/0/2/pizza-2.png/ENKcpDQY_LUBIAcoBw/1XpDecQtpFtazD3yK2SamEN8J4OisxeJOQIi1YzVC-E?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Kebab</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">8,99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-6.dropbox.com/t/2/AACnRWd3o3vwkSlb5-ZB1YRqLysNMR1ssAm1XGLefDOQsQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-3.png/ENKcpDQY_LUBIAcoBw/aFsoOromR8sh8lj2gRBkcpBPrjxdz_ZJEttJYy58k1Y?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Raclette</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">11,99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-1.dropbox.com/t/2/AACr5DgZmB1osW9qSuDuknIhXCpg8Pp4ppneT4sHFbiNoA/12/67241699/png/32x32/3/1516896000/0/2/pizza-4.png/ENKcpDQYobYBIAcoBw/pqf3Pr-33KUJqcNTrMJxkLs7OWOrbzOhZxwsasv78B8?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Saumon</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">14.99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-4.dropbox.com/t/2/AAAv67UpoEvGOmgWbhN_kuO6FWarXCvqZCOBi2moYGecpg/12/67241699/png/32x32/3/1516896000/0/2/pizza-5.png/ENKcpDQY_LUBIAcoBw/8hN-hcpaokh0w1Y1FVki4NucM410ynSsoSdiLaIAXB4?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Savoyarde</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">14.99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AACPNZwWyx--2age19QRERahKkwSR7FewR_gXLddOBVTJg/12/67241699/png/32x32/3/1516896000/0/2/pizza-6.png/ENKcpDQY_LUBIAcoBw/LFh05e5mBHDMXVt_1JaGUZCCJ1XJIxsXOJnM9d5OXd0?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">4 fromages</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">8.99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-1.dropbox.com/t/2/AAAjNMqkk90FJrTci0R7OVLiJIkdghlTOV4RD64H3fFQBQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-7.png/ENKcpDQY_LUBIAcoBw/yiIppeyA5izf3vEFeQoMzBE5zPV6mFDFYuEL7fatDZM?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Bolognaise</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">9.99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABSTrDFB8kjuuI_jT5aWZpfkZVWilHgPrIVJ8k3FFVkiQ/12/67241699/png/32x32/3/1516896000/0/2/pizza-8.png/ENKcpDQY_LUBIAcoBw/lGy-gpJbpSUQOfn4DqXZtQKYmAzkOzkJlqyTOiKB3zo?dl=0&preserve_transparency=1&size=2048x1536&size_mode=3" alt="Pizza">
+                    <div class="card-body">
+                      <h5 class="card-title">Reine</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-block btn-animation">7.99 &#128;</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+        </section>
+        <!--end .pizza-->
+
+      <!-- nos salades -->
+        <section class="salads">
+          <div class="container">
+            <div class="section-header">
+              <h3 class="section-title">nos salades</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">salade</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">salade</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">salade</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="http://www.flunch.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/0/00067_01_grandeassiettemaraichere_1_1.png" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">salade</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-block btn-animation">6.99 &#128;</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!--end .salads-->
+
+    </div> <!--end main.content-->
+
+    <!-- Main footer -->
+    <footer class="main-footer">
+
+      <!-- Google Map -->
+      <div class="googlemap">
+        <div class="container">
+          <div class="googlemap-content">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47339367072!2d-0.24167967679018806!3d51.52855824347072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondres%2C+Royaume-Uni!5e0!3m2!1sfr!2sfr!4v1516891616475" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="contact">
+        <div class="container text-center">
+          <h5>ALORS C'ETAIT BON ?<h5>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </br>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text text-white" class="form-control text-white" placeholder="Votre prénom">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text bg-dark" class="form-control text-white" placeholder="Votre nom">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="email" class="form-control text-white" id="exampleFormControlInput1" placeholder="Adresse email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control text-white" id="exampleFormControlTextarea1" placeholder="Votre message" rows="8"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning text-center">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright">
+        <div class="container text-center">
+        </br>
+        <p>&copy; 2018 Copyright - Web Pizza<p>
+          <a href="#">Politique de confidentialité</a> . <a href="#">Mentions légales</a>
+        </div>
+      </br>
+      </div>
+    </footer> <!--end main.footer-->
+
+  </body>
+</html>
